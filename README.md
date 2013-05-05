@@ -35,7 +35,7 @@ is a relationship and name, email, password, title, content are attributes
     title
     content
 
-Now just run SoftMod on the file. 
+Now just run Arkitekt on the file. 
 
     arkhitekt diagram.txt 
 
