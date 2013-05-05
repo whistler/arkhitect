@@ -1,0 +1,15 @@
+users
+-----
+name
+email
+password
+
+writes
+------    
+users 1
+posts n
+
+posts
+-----
+title
+content

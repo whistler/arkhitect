@@ -1,0 +1,9 @@
+config
+------
+entity {fontname: helvetica, fontsize: 12, color: grey, style: filled}
+relation {fontname: helvetica, fontsize: 12, color: grey, style: filled}
+edge {fontname: helvetica, fontsize: 12, color: grey, style: filled}
+attribute {fontname: helvetica, fontsize: 12, color: grey, style: filled}
+primary_attribute {fontname: helvetica, fontsize: 12, color: grey, style: filled}
+filetype png
+filter neato 
