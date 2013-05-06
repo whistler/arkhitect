@@ -4,11 +4,17 @@ Arkhitekt is a software modelling tool that generates diagrams from text based
 notation. Currently ER diagrams and Class diagrams are supported, more diagram
 are planned for the future.
 
-Why text instead of GUI?
-------------------------
+=== Why text instead of GUI?
+
 It is often easier to just type out what you need to draw instead of using drag
 and drop to draw in GUI, it is easier to modify as well as there is not need to
 worry about the layout.
+
+=== Design Goals
+- Quick to learn
+- Looks presentable in raw form
+- Easy to modify
+- Ability to extend to other forms of diagrams
 
 Install
 -------
