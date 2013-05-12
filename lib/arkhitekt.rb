@@ -3,7 +3,6 @@ require_relative 'arkhitekt/parse'
 
 class Arkhitekt
 
-
   def initialize(filename)
     @filename = filename
     @settings = Hash.new
@@ -12,30 +11,20 @@ class Arkhitekt
   end
 
   def load_config
+    load_default_config
     file = "~/.arkhitekt" if File.exist?("~/.arkhitekt")
     file = ".arkhitekt" if File.exist?(".arkhitekt")
-    if file == nil
-      load_default_config
-    else
+    if file != nil
       puts "TODO: Load config file"
     end
   end
 
   def load_content
     file = File.open(@filename, "rb")
-    Arkhitekt::Parse.get_blocks(file.read)
-  end
-
-  def generate_er_diagram
-
-  end
-
-  def generate_object_diagram
-
-  end
-
-  def generate_class_diagram
-
+    @blocks = Arkhitekt::Parse.get_blocks(file.read)
+    diagram = @blocks[:default].select{|a| a[0].downcase.strip == "hello"}[1].downcase
+    graph = EntityRelationship.new
+    graph.build_structure(@blocks) if diagram == 'er'
   end
 
   def load_default_config
@@ -46,6 +35,7 @@ class Arkhitekt
     @settings[:primary_attribute] = {fontname: 'helvetica', fontsize: 12, color: 'grey', style: 'filled'}
     @settings[:filetype] = 'png'
     @settings[:filter] = 'neato'
+    @settings[:type] = 'er'
   end
 
 end
