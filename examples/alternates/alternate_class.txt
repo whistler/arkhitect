@@ -1,0 +1,41 @@
+Diagrams
+========
+
+  Diagram
+  -------
+  initialize(sections)
+  initialize(sections, settings)
+  create_structures()
+  generate()
+  save()
+  -------
+
+  EntityRelationship
+  ------------------
+  inherits from diagram
+  ------------------
+
+Structures
+==========
+
+  Entity
+  ------
+  name
+  fields
+  methods
+  -------
+
+  Relation
+  --------
+  name
+  attributes
+  ----------
+
+
+  Node
+  ----
+
+
+  Edge
+  ----
+

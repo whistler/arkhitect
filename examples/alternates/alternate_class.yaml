@@ -1,0 +1,39 @@
+package: Diagrams
+
+  class: Diagram
+    methods: 
+      - initialize(sections)
+      - initiailze(sections, settings)
+      - create_structures()
+      - generate()
+      - save()
+
+  class: EntityRelationship
+    inherits: diagram
+    attributes:
+      - entities
+      - relationships
+      - edges
+      - ISAs
+
+package: Structures
+
+  class: Node
+    attributes:
+      - name
+
+  class: Edge
+    attributes:
+      - node1
+      - node2
+      - node1_label
+      - node2_label
+      - edge_label
+      - edgetype
+
+  class: Entity
+    inherits: Node
+    attributes:
+      - name
+      - fields
+      - methods

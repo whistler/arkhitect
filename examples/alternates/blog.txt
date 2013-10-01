@@ -1,0 +1,19 @@
+diagram er
+
+user
+----
+name
+email
+password
+
+writes
+------   
+users 1
+posts n
+
+post
+----
+title
+content
+
+admin ISA user

@@ -1,0 +1,16 @@
+user:
+  +id
+  name
+  email
+  password
+
+design:
+  +id
+  user_id
+  title
+  description
+  url
+
+has a:
+  design: n
+  user: 1
